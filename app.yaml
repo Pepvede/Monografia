@@ -1,0 +1,18 @@
+runtime:  python-compat
+vm: true
+threadsafe: true
+
+api_version: 1
+
+network:
+    forwarded_ports:
+    - 8080
+
+health_check:
+    enable_health_check: false
+
+handlers:
+    - url: .*
+    script: main.app
+
+
