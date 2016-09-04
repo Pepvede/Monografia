@@ -1,18 +1,9 @@
-runtime:  python-compat
-vm: true
-threadsafe: true
-
+application: Monografia
+version: 1
 api_version: 1
-
-network:
-    forwarded_ports:
-    - 8080
-
-health_check:
-    enable_health_check: false
+runtime: python
 
 handlers:
     - url: .*
-    script: main.app
-
+    script: main.py
 
